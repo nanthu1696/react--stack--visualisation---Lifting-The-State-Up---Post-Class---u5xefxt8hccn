@@ -20,9 +20,10 @@ function App() {
   }
   function handletop()
   {
-    let l = arr.length;
-    let arr2 = arr;
-    setTopu(arr2[5]);
+    let l = arr.shift();
+    setTopu(l);
+    let arr2 = [l, ...arr];
+    setArr(arr2);
   }
   return (
     <div className="container">
