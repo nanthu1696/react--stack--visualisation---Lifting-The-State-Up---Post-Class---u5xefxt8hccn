@@ -1,6 +1,6 @@
 import React from 'react';
-function Element() {
-  return <div className="element">10</div>;
+function Element(props) {
+  return <div className="element">{props.valu}</div>;
 }
 
 export default Element;
